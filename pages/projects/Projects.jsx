@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../style.scss';
+import '../styles.scss';
 
 const Projects = () => {
   return <div className="projects"></div>;

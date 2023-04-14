@@ -1,0 +1,12 @@
+.about{
+    height: auto;
+}
+
+@media(min-width: 900px){
+    .about_content{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 3rem;
+        align-items: flex-start;
+    }
+}

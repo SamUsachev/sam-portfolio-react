@@ -1,18 +1,16 @@
 import React from 'react';
 
-import '../style.scss';
+import './styles.scss';
 
 const About = () => {
   return (
-    <section>
-      <div className="about">
-        <h1>aaaa</h1>
-        <h1>aaaa</h1>
-        <h1>aaaa</h1>
-        <h1>aaaa</h1>
-        <h1>aaaa</h1>
+    <div className="about">
+      <div className="about_content">
+        <div className="about_about-me">
+          <h1>About me</h1>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
