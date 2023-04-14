@@ -51,7 +51,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <Link to="/" className="link">
+          <Link to="/#" className="link">
             <div className="header_logo-container">
               <div className="header_logo_img-container">
                 <img
