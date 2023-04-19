@@ -1,12 +1,211 @@
 .about{
+    margin: 7rem 1rem 1rem 1rem;
+    width: auto;
     height: auto;
+    
+   
+
+
+    .about_about-me{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        span{
+            position: relative;
+            margin-top: 0.5rem;
+            height: 0.3rem;
+            width: 5rem;
+            background: #0062b9;
+            border-radius: 5px;
+        }
+
+    }
+
+    .about_content{
+        
+        .about_content-skills{
+            
+            ul{
+                display: block;
+                transition-duration: .3s;
+                box-shadow: 0 2px 10px #1b6bb2;
+                margin-top: 1rem;
+
+                li{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                    transition: margin-bottom 2s ;
+                    font-family: 'Marcellus', serif;
+                }   
+            }
+
+            @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+
+h3 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 1.5rem;
+  color: black
 }
 
-@media(min-width: 900px){
+//Animation skills-text
+h3 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: #1b6bb2;}
+  to{border-right-color: transparent;}
+}
+
+        }
+        
+
+        
+    }
+
+        .about_about-me-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 55%;
+            height: auto;
+            margin-top: 2rem;
+            overflow: hidden;
+            border: solid rgb(240, 238, 238);
+            box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);
+
+            p{
+                font-size: 1.23rem;
+                text-align: center;
+                font-family: 'Asap', sans-serif;
+                line-height: 125%;
+            }
+            a{
+                
+                margin: 2% 0;
+                font-size: 110%;
+                text-decoration: none;
+                color:white;
+                width: fit-content;
+                border: solid #0062b9;
+                background-color: #0062b9;
+                
+            }
+            a:hover{
+                
+                color: black;
+                background-color: whitesmoke;
+                border: solid #0062b9;
+                border-radius: 10%;
+            }
+            
+        }
+
+}
+@media(min-width: 900px){ 
+    .about_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .about_content-skills{
+            margin: 5rem 6rem 0rem 6rem;
+        }
+    }  
+    
+            
+}
+
+@media(max-width: 899px){
     .about_content{
         display: flex;
         flex-direction: column;
-        margin: 5rem 3rem;
-        align-items: flex-start;
+        justify-content: center;
     }
 }
+
+.circle-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 10px;
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 55px;
+    top: 55px;
+    left: 55px;
+    transform: translate(-50%, -50%);
+  }
+
+  //Animation circles-skills
+  
+.circle_container{
+    display: flex;
+    justify-content: center;
+}
+
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2.5px;
+    background-clip: content-box;
+    animation: spin 10s linear infinite;
+  }
+  .icon-container{
+    width: 70%;
+    height: 70%;
+  }
+  
+  .circle-wrapper:active .circle {
+    animation: spin 2s linear infinite;
+  }
+  
+  .react {
+    border: 2.5px dashed #1b89c0;
+  }
+  
+  .ts {
+    border: 2.5px dashed #1c8fd1;
+  }
+  
+  .js {
+    background-color: #F0D500;
+    border: 2.5px dashed #F0D500;
+  }
+
+  .redux {
+    border: 2.5px dashed #8f1cd1;
+  }
+  
+  @keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+  
+
+    
+
