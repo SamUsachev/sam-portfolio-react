@@ -1,0 +1,56 @@
+.projects{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 7rem 1rem 1rem 1rem;
+  width: auto;
+  height: auto;
+  
+  span{
+    position: relative;
+    margin-top: 0.5rem;
+    height: 0.3rem;
+    width: 5rem;
+    background: #0062b9;
+    border-radius: 5px;
+}
+
+.card{
+  display: block;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 40%;
+  border: solid rgb(240, 238, 238);
+  border-radius: 3%;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);
+
+  img{
+    width: 94%;
+    border-radius: 5%;
+    margin: 3%
+  }
+  h3{
+    margin-top: 5%;
+  }
+
+}
+}
+
+
+
+
+
+
+// opacity: 0;
+//   transition: 1s; /*Скорость перехода состояния элемента*/
+//   animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+//   animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+//   animation-delay: 1s; /* Задержка перед началом */
+//   @keyframes show{
+//     0%{
+//     opacity:0;
+//     }
+//     100% {
+//     opacity:1;
+//     }
+//     }
