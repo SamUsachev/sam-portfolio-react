@@ -14,8 +14,7 @@ const About = () => {
       <div className="about_content">
         <div className="about_content-skills">
           <h3 className="about_content-skills-hard">HARD SKILLS</h3>
-          <span></span>
-          <ul>
+          <ul className="ul-left">
             <li>HTML/CSS</li>
             <li>JavaScript/TS</li>
             <li>ReactJS</li>
@@ -55,7 +54,7 @@ const About = () => {
         </div>
         <div className="about_content-skills">
           <h3 className="about_content-skills-soft">SOFT SKILLS</h3>
-          <ul>
+          <ul className="ul-right">
             <li>Responsibility</li>
             <li>Initiative</li>
             <li>Analytical thinking</li>
